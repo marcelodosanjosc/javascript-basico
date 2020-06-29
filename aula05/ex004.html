@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha pagina JS</title>
+    <style>
+body{
+    font: normal 20pt Arial;
+}
+
+    </style>
+
+</head>
+<body>
+    <script>
+        var nome = prompt("Qual seu nome ?")
+        var n = 2500.5
+        var idade = prompt("Digite sua idade:")
+       var res =  idade >= 18 ? "Maior": "Menor"
+
+        
+        document.writeln(`Ola, <strong> ${nome} </strong> ! seu nome tem ${nome.length} letras.`)
+        document.writeln(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+        document.writeln(`Seu nome e minúsculas é ${nome.toLowerCase()}`)
+        document.writeln(`Seu salario: ${n.toLocaleString('pt-br',{style: 'currency', currency:'BRL'})}`)
+        if (res == "Maior"){
+            document.writeln(`Sr ${nome}  sua idade ${idade} e maior de idade `)
+        }else{
+            document.writeln(`Sr ${nome}  sua idade ${idade} e mesnor de idade `)
+        }
+    </script>
+</body>
+</html>
